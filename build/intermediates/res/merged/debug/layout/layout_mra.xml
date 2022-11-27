@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="140.0dip"
+            android:layout_height="70.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="新建"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/gray_1"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="序号"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="检查时间"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="是否正常"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="添加时间"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40.0dip"
+        android:scrollbars="none" />
+
+</LinearLayout>

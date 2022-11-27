@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/line_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="疾病名称"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="药物/非药物治疗"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="用法用量"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="使用原因"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="开始日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="结束日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/tv_still"
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="仍在使用"
+            android:textColor="@color/black_color"
+            android:visibility="gone" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <EditText
+                android:id="@+id/tv1"
+                style="@style/table_head"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black_color" />
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <EditText
+                android:id="@+id/tv2"
+                style="@style/table_head"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black_color" />
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <EditText
+                android:id="@+id/tv3"
+                style="@style/table_head"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black_color" />
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <EditText
+                android:id="@+id/tv_3_1"
+                style="@style/table_head"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black_color" />
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:gravity="right"
+                android:weightSum="3" >
+
+                <com.ukang.clinicaltrial.view.Mdate
+                    android:id="@+id/date1"
+                    style="@style/table_head"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.7"
+                    android:textColor="@color/black_color" />
+
+                <com.ukang.clinicaltrial.view.MobileTime
+                    android:id="@+id/date11"
+                    style="@style/table_head"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:gravity="right"
+                android:weightSum="3" >
+
+                <com.ukang.clinicaltrial.view.Mdate
+                    android:id="@+id/date2"
+                    style="@style/table_head"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="center"
+                    android:textColor="@color/black_color" />
+
+                <com.ukang.clinicaltrial.view.MobileTime
+                    android:id="@+id/date22"
+                    style="@style/table_head"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_weight="1.0" >
+
+                <CheckBox
+                    android:id="@+id/tv4"
+                    style="@style/table_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/black_color" />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip" >
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/submit_visible"
+            android:layout_width="140.0dip"
+            android:layout_height="70.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</LinearLayout>

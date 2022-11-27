@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\workspace_4_16\\EDC_System\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\workspace_4_16\\EDC_System\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workspace_4_16\\EDC_System\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\workspace_4_16\\EDC_System\\res\\drawable-mdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\workspace_4_16\\EDC_System\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\workspace_4_16\\EDC_System\\res\\drawable-mdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "D:\\workspace_4_16\\EDC_System\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\workspace_4_16\\EDC_System\\res\\drawable-mdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "D:\\workspace_4_16\\EDC_System\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\splash.png",
+        "source": "D:\\workspace_4_16\\EDC_System\\res\\drawable-mdpi\\splash.png"
+    }
+]

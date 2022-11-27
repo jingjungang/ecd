@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="检查时间:"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <com.ukang.clinicaltrial.view.Mdate
+            android:id="@+id/mdate"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="结果"
+            android:textColor="@color/black_color" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black_color" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="尿HCG检查:"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/frg_11_1a"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="阳性"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frg_11_1b"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="阴性"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frg_11_1c"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="未查"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frg_11_1d"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="不适用"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/add_img_btn"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_btn"
+            android:text="添加图片"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add_img_btn"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/camera_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:numColumns="9"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

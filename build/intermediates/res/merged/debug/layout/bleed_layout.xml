@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_margin="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="出血事件"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/bleed_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="false"
+                android:gravity="center|left"
+                android:text="未发生"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/bleed_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="false"
+                android:gravity="center|left"
+                android:text="已发生"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_margin="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="请详述发生的出血事件"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/bleed_et"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2.0" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip" />
+
+    <GridView
+        android:id="@+id/camera_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="9"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/add_img_btn"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_btn"
+            android:text="添加图片"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add_img_btn"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</LinearLayout>

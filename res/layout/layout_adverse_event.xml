@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_margin="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="实验过程中是否发生不良事件"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="不良事件"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="无"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <ScrollView
+        android:id="@+id/Scorll_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="(用标准医学术语)记录所有观察到的和用以下问句“自上次检查后，您有何不同的感觉？”直接询问得出的不良事件。尽量使用诊断名称而不使用症状名称。)" />
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="不良事件名称" />
+
+                <EditText
+                    android:id="@+id/frg_17_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="不良事件描述" />
+
+                <EditText
+                    android:id="@+id/frg_17_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="发生时间" />
+
+                <com.ukang.clinicaltrial.view.Mdate
+                    android:id="@+id/frg_17_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="结束时间" />
+
+                <com.ukang.clinicaltrial.view.Mdate
+                    android:id="@+id/frg_17_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="严重程度" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupx2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_xa"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="轻"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_xb"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="中"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_xc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="重"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="是否采取措施" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_5a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_5b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="对研究药物的影响" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="剂量不变"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="增加剂量 "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6c"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="减少剂量"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6d"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="暂停用药 "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6e"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="永久停药"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_6f"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="正常停药 "
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="与研究药物的关系" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_7a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="肯定有关"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_7b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="很可能有关 "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_7c"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="可能有关"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_7d"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="可能无关  "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_7e"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="无关"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="是否符合GCP
+严重不良事件定义？" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_8a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_8b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="所发生不良事件的结局" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="消失, 无后遗症"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="消失, 有后遗症  "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9c"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="缓解"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9d"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="left|center"
+                        android:text="持续 "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9e"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="死亡 "
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_9f"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="不祥 "
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="受试者是否因此
+事件而退出研究？" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/frg_17_10a"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/frg_17_10b"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+
+</LinearLayout>

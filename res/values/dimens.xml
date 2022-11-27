@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="BasicTextSize">14.0sp</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="slidingmenu_offset">60.0dip</dimen>
+    <dimen name="list_padding">10.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="swipe_right">50.0dip</dimen>
+    <dimen name="pie_legend">100.0dip</dimen>
+    <dimen name="side_text">14.0sp</dimen>
+    <dimen name="lunbo_fontsize">13.0sp</dimen>
+    <dimen name="viewpager_focusview_paddingleft_size">5.0dip</dimen>
+    <dimen name="viewpager_focusview_paddingright_size">20.0dip</dimen>
+    <dimen name="viewpager_focusview_text_padding_font">4.0dip</dimen>
+    <dimen name="ldrawer_drawableSize">50.0dip</dimen>
+    <dimen name="ldrawer_barSize">18.0dip</dimen>
+    <dimen name="ldrawer_topBottomBarArrowSize">11.0dip</dimen>
+    <dimen name="ldrawer_thickness">2.0dip</dimen>
+    <dimen name="ldrawer_gapBetweenBars">3.0dip</dimen>
+    <dimen name="ldrawer_middleBarArrowSize">16.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="ptr_progress_bar_stroke_width">4.0dip</dimen>
+    <dimen name="ui_10_dip">10.0dip</dimen>
+    <dimen name="view_small_padding">1.0dip</dimen>
+    <dimen name="view_padding">6.0dip</dimen>
+    <dimen name="ZlbrecordSize">15sp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="item_size">20sp</dimen>
+    <dimen name="mtitle_size">35sp</dimen>
+
+</resources>

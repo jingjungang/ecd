@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="top|center"
+            android:text="临床综合疗效评价:"
+            android:textSize="16sp" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.5"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="基本痊愈"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="显著进步"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="进步"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="无变化"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="恶化"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_none_orange"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="     *基本痊愈：功能缺损评分减少90～100%，病残程度0级；显著进步：功能缺损评分减少46～89%，病残程度1～3级；
+进步：功能缺损评分减少18～45%；无变化：功能缺损评分减少或增加在18%以内；恶化：功能缺损评分增加18%以上。 " />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/submit_visible"
+            android:layout_width="120.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="提交" />
+    </LinearLayout>
+
+</LinearLayout>

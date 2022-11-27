@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="基线期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="中心号"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="药物编号"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="※姓名拼音缩写"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:prompt="@string/spinner1"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/zhongxin_et"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/yaowu_num"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/title2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20.0dip"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:text="Barthel指数评分"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="项目"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="center"
+                    android:text="评分标准"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="评分"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="1.吃饭"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=独立。能应用任何必要的工具。在合理时间进食。
+5=需要部分帮助（例如夹菜、盛饭、搅拌、切割食物等）
+0=完全依赖他人。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="2.洗浴"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+5=无帮助下可以进行。
+0=需要他人帮助。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="3.梳洗"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+5=自主洗脸、梳头、刷牙、剃须（如果是电动剃须刀可以用插座）。
+0=需要他人帮助。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="4.穿衣"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=独立。系鞋带、扣扣件、应用支具。
+5=部分需要帮助但至少有一半的任务在合理时间做。
+0=需要他人帮助"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="5.大便"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=无意外。如果需要可以应用灌肠或栓剂。
+5=偶尔有意外，或需要帮助灌肠或栓剂。
+0=经常失禁或昏迷。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="6.小便"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=无意外，如果应用器具可以自己护理收拾。
+5=偶尔意外或需要帮助应用器具。
+0=经常失禁或昏迷。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="7.如厕"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=独立到卫生间或应用便盆、完成脱穿衣服或卫生清洁。
+5=需要帮助平衡、完成脱穿衣服或卫生清洁。
+0=依赖他人。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="8.椅子/床转换"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+15=独立，包括锁轮椅和升脚踏板。
+10=最小帮助或监管。
+5=能坐，但需要最大的帮助转换。
+0=完全不能。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="9.行走"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+15=独立行走50米。也许应用辅助装置，除了滚动的行走器械。
+10=帮助可行走50米。
+5=如果不能行走，独立用轮椅行走50米。
+0=完全不能，用轮椅也不能独立行走。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_9"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="10.上楼"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:text="评分标准：
+10=独立。也许应用辅助装置。
+5=需要部分帮助（如搀扶等）或监管。
+0=在帮助（搀扶等）下也不能完成。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_10"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="总分"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/frg_20_11"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black_color" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="2.0dip"
+                    android:text="研究者签字"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/frg_20_12"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black_color" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="2.0dip"
+                    android:text="时间"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <com.ukang.clinicaltrial.view.Mdate
+                    android:id="@+id/frg_20_13"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black_color" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="2.0dip"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+            -->
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip" >
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="140.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/selector_btn"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/white_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

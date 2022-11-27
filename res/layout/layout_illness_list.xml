@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/title2"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <EditText
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_none"
+                android:hint="搜索"
+                android:paddingLeft="5.0dip"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector_btn"
+            android:text="搜索"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="0.5"
+            android:background="@color/transparent"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="临床试验"
+            android:textColor="@color/black_color"
+            android:textSize="30.0sp"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:text="" />
+
+        <Button
+            android:id="@+id/add_bl"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_bg"
+            android:text="+ 新建病例"
+            android:textColor="@color/white_color"
+            android:textSize="25.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/index"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="10.0dip"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/circle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="10.0dip"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/circle"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="10.0dip"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/circle"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="10.0dip"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/circle"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="10.0dip"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/circle"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/transparent" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/title"
+        android:background="@color/blue_color"
+        android:padding="1.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/lv1"
+        android:layout_width="70.0dip"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/index"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/base_info"
+                android:layout_width="50.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/blbg"
+                android:clickable="true"
+                android:textColor="@color/white_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="病历库"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130.0dip"
+            android:layout_height="100.0dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/person_center"
+                android:layout_width="50.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/selector_person_center"
+                android:clickable="true"
+                android:textColor="@color/white_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="个人中心"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/index"
+        android:layout_toRightOf="@+id/lv1"
+        android:background="@color/white_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_below="@+id/index"
+            android:background="@color/title3"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="就诊卡号"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="性别"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="年龄"
+                android:textColor="@color/title_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="更新时间"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

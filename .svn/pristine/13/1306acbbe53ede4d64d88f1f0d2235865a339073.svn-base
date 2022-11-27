@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="是否有不良事件"
+            android:textColor="@color/black_color" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_lable"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="无"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="有"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save"
+            style="@style/submit_visible"
+            android:layout_width="100dip"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:gravity="center"
+            android:text="保存" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center" >
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="50dip"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_box"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:id="@+id/title_1"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/gray_1"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="疾病名称"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="药物/非药物治疗"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="用法用量"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="开始日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="结束日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="仍在使用"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_2"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/gray_1"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="用药名称"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="给药途径"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="日剂量"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="使用原因"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="开始日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="结束日期"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/still"
+            style="@style/table_head"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="仍在使用"
+            android:textColor="@color/black_color"
+            android:visibility="gone" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <ListView
+        android:id="@+id/lv"
+        style="@style/ListView_style"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+</LinearLayout>

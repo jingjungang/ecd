@@ -1,0 +1,91 @@
+package com.ukang.clinic.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.ukang.clinic.R;
+import com.ukang.clinic.entity.Notice;
+
+import java.util.List;
+import java.util.Map;
+import java.util.zip.Inflater;
+
+/**
+ * Created by zzd on 2016/7/5.
+ *
+ * 项目公告列表适配器
+ */
+public class Announcement_Adapter extends BaseAdapter {
+
+    Context content;
+    List<Notice> list;
+
+    public Announcement_Adapter(Context content,List<Notice> list) {
+        this.content = content;
+        this.list = list;
+    }
+
+    public void setList(List<Notice> list) {
+        this.list = list;
+    }
+
+    public List<Notice> getList() {
+        return list;
+    }
+
+    @Override
+    public int getCount() {
+    	if(list != null){
+    		return list.size();
+    	}
+        return 0;
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        ViewHodler hodler;
+        if(view == null){
+            hodler = new ViewHodler();
+            view = LayoutInflater.from(content).inflate(R.layout.announcement_item, null);
+            hodler.title_name = (TextView) view.findViewById(R.id.title_name);
+            hodler.status = (ImageView) view.findViewById(R.id.status);
+            view.setTag(hodler);
+        }else{
+            hodler = (ViewHodler) view.getTag();
+        }
+        
+        hodler.title_name.setText(list.get(i).getTitle());
+        switch(list.get(i).getState()){
+            case 1:
+                hodler.status.setBackgroundResource(R.drawable.tongzhi);
+                break;
+            case 2:
+                hodler.status.setBackgroundResource(R.drawable.tuijian);
+                break;
+            case 3:
+                hodler.status.setBackgroundResource(R.drawable.zhiding);
+                break;
+        }
+        return view;
+    }
+
+    class ViewHodler {
+        ImageView status;
+        TextView title_name;
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff55bd00"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <ImageButton
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="0.0dip"
+        android:background="@drawable/back_article" />
+
+    <TextView
+        android:id="@+id/tv_left_handle01"
+        style="@style/top_tv_style"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10.0dip"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/top_tv_style"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_right_handle02"
+        style="@style/top_tv_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ib_right_handle2" />
+
+    <ImageButton
+        android:id="@+id/ib_right_handle2"
+        style="@style/top_ib_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip" />
+
+</RelativeLayout>

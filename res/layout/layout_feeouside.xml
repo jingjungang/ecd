@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="出院后所有相关治疗性药物、预防复发药物及康复理疗花费"
+            android:textSize="16sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:minWidth="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="元"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip" >
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/submit_visible"
+            android:layout_width="120.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:text="提交" />
+    </RelativeLayout>
+
+</LinearLayout>

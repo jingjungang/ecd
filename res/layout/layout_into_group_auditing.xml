@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="15dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@color/title2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:text="第一部分：病例入选标准"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="1. 符合缺血性脑卒中诊断标准；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c0"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="2. 3分＜ 神经功能缺损评分（NIHSS）≤25分；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c2"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="3. MRA显示动脉粥样硬化所致颈动脉、大脑前动脉、大脑中动脉、大脑后动脉、椎-基底动脉狭窄；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c4"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c5"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="4. 发病72h内；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c6"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c7"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="5. 首次发病，或既往发病但未留相关严重后遗症；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c8"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c9"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="6. 自愿参加本次研究，并签署知情同意书者。"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c10"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c11"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@color/title2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:text="第二部分：病例排除标准"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="1. 短暂性脑缺血发作；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c12"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c13"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="2. 已进行或计划进行溶栓治疗患者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c14"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c15"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="3. 影像学检查有脑出血患者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_9"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c16"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c17"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="4. 脑梗死后脑出血以及脑动脉炎患者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_10"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c18"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c19"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="5. 由脑肿瘤、脑外伤、脑寄生虫病、风湿性心脏病、冠心病及其他心脏病合并房颤而引起的脑栓塞者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_11"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c20"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c21"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="6. ALT、AST≥正常值上限的2.5倍，Cr≥正常值上限1.5倍；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_12"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c22"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c23"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="7.已使用双抗治疗；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_13"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c24"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c25"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="8. 有出血倾向者，3个月内发生过严重出血者，PLT小于正常值范围下限或APTT大于对照值3秒以上者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_14"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c26"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c27"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt9"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="9. 已知对银杏类药物、乙醇、甘油过敏或过敏体质者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_15"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c29"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt10"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="10. 妊娠、哺乳者和有妊娠计划者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_16"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c30"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c31"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt11"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="11. 近1个月参加其他临床研究者；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_17"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c32"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c33"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/tt12"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="12. 研究者认为不适宜参加该临床研究者（精神神志异常等）；"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_18"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c34"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c35"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:padding="2.0dip"
+                    android:text="患者是否通过筛选:"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_19"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="2.0"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/c36"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="是，进入治疗期"
+                        android:textColor="@color/black_color" />
+
+                    <RadioButton
+                        android:id="@+id/c37"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="否，请退出实验"
+                        android:textColor="@color/black_color" />
+                </RadioGroup>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:id="@+id/ll_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_none"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="请输入药物编号:"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color_1"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <EditText
+                    android:id="@+id/no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:background="@null"
+                    android:hint="输入药物编号"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="140.0dip"
+                    android:layout_height="55.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/selector_btn"
+                    android:text="提交"
+                    android:textColor="@color/white_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/mTitle_style"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="left|center"
+            android:paddingLeft="100.0dip"
+            android:text=" 诊 断 "
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center"
+                android:text="西医诊断："
+                android:textColor="@color/black_color" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1.0dip"
+                android:layout_weight="2.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="缺血性脑卒中（急性期）"
+                    android:textColor="@color/black_color" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="其它（请注明）"
+                    android:textColor="@color/black_color" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/des"
+                style="@style/edittext_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center"
+                android:text="发病时间："
+                android:textColor="@color/black_color" />
+
+            <com.ukang.clinicaltrial.view.Mdate
+                android:id="@+id/date1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:paddingLeft="70dp"
+                android:background="@drawable/bg_none"/>
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.5"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center"
+                android:text="确认时间："
+                android:textColor="@color/black_color" />
+
+            <com.ukang.clinicaltrial.view.Mdate
+                android:id="@+id/date2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint=""
+                android:paddingLeft="70dp"
+                android:background="@drawable/bg_none"/>
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.5"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center"
+                android:text="过敏史："
+                android:textColor="@color/black_color" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1.0dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/n_illness"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="无"
+                    android:textColor="@color/black_color" />
+
+                <RadioButton
+                    android:id="@+id/y_illness"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="有"
+                    android:textColor="@color/black_color" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/des1"
+                style="@style/edittext_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center"
+                android:text="既往疾病史："
+                android:textColor="@color/black_color" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1.0dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/n_old_illness"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="无"
+                    android:textColor="@color/black_color" />
+
+                <RadioButton
+                    android:id="@+id/y_old_illness"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="有"
+                    android:textColor="@color/black_color" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/des2"
+                style="@style/edittext_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="140.0dip"
+                android:layout_height="70.0dip"
+                android:background="@drawable/selector_btn"
+                android:layout_centerHorizontal="true"
+                android:text="提交"
+                android:textColor="@color/white_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

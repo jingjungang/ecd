@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/ukang/clinic/common/MWDUtils.java=UTF-8
+encoding//src/com/ukang/clinic/guide/SwitchLayout.java=GBK
+encoding//src/com/ukang/clinic/login/GetBackPwdActivity.java=UTF-8
+encoding//src/com/ukang/clinic/login/LoginActivity.java=UTF-8
+encoding//src/com/ukang/clinic/login/RegisterActivity.java=UTF-8
+encoding//src/com/ukang/clinic/login/SwitchActivity.java=GBK
+encoding//src/com/ukang/clinic/utils/HttpUtil.java=GBK
+encoding//src/com/ukang/clinic/utils/HttpsUtil.java=GBK
+encoding/<project>=UTF-8

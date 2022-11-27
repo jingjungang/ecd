@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/gray_1"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="名称"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="结果"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="单位"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            style="@style/mItem_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="其他单位"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="临床意义判定"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_color_1"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mItem_style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="1-2-3-4"
+                    android:textColor="@color/black_color" />
+
+                <View
+                    style="@style/line_color_1"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    style="@style/mItem_style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="异常说明"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/line_color_1"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="红细胞(RBC)"
+            android:textColor="@color/black_color" />
+
+        <EditText
+            android:id="@+id/frag_4_1a"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="×10^12/L"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_2a"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.5"
+            android:contentDescription="性别"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/frag_4_3a"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_3b"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_3c"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_3d"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_7a"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="血红蛋白（HGB）"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_1b"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="g/L"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_2b"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.5"
+            android:contentDescription="性别"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/frag_4_4a"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_4b"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_4c"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_4d"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_7b"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="白细胞（WBC）"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_1c"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="×10^9/L"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_2c"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.5"
+            android:contentDescription="性别"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/frag_4_5a"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_5b"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_5c"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_5d"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_7c"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="血小板（PLT）"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_1d"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="×10^9/L"
+            android:textColor="@color/black_color" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_2d"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_3"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.5"
+            android:contentDescription="性别"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/frag_4_6a"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_6b"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_6c"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black_color" />
+
+            <RadioButton
+                android:id="@+id/frag_4_6d"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black_color" />
+        </RadioGroup>
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:id="@+id/frag_4_7d"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <View
+            style="@style/line_color"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mItem_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="检查时间："
+                android:textColor="@color/black_color" />
+
+            <com.ukang.clinicaltrial.view.Mdate
+                android:id="@+id/ctime"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="名称"
+                android:background="@drawable/bg_none"
+                android:textColor="@color/black_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/black_color" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="临床意义：1表示为正常；2表示为异常单无临床意义；3表示为异常切有临床意义；4表示为未查" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/add_img_btn"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_btn"
+            android:text="添加图片"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="140.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add_img_btn"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/camera_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:numColumns="9"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>
